@@ -5,15 +5,23 @@ export const FooterContainer = styled.div`
     height: 650px;
     background: rgba(211, 211, 211);
 
+    @media screen and (max-width: 1000px) {
+        height: 900px;
+    }
+
 `
 export const FooterWrapper = styled.div`
-    background: blue;
+    // background: blue;
     width: 80%;
     height: 600px;
     margin: 0 auto;
 
     @media screen and (max-width: 1024px) {
         width: 95%;
+    }
+    
+    @media screen and (max-width: 1000px) {
+        height: 850px;
     }
 
 `
@@ -27,7 +35,7 @@ export const FooterP = styled.p`
     line-height: 30px;
 
     span {
-        // background: #01bf71;
+        background: #01bf71;
         text-shadow: -1px 1px black;
         color: white;
         font-weight: bolder;
@@ -39,6 +47,12 @@ export const FooterContent = styled.div`
     // background: yellow;
     width: 100%;
     display: flex;
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
     
 
 `
@@ -94,6 +108,35 @@ export const FooterForm = styled.form`
         }
     }
 
+    @media screen and (max-width: 1000px) {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input {
+            margin: 15px 0;
+        }
+
+        textarea {
+            margin-left: 0;
+        }
+
+        button {
+            margin-left: 0;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        width: 95%;
+        input {
+            height: 55px;
+            width: 100%;
+        }
+        textarea {
+            width: 100%
+        }
+    }
+
 `
 
 export const FooterSocials = styled.div`
@@ -107,7 +150,12 @@ export const FooterSocials = styled.div`
         color: black;
         text-shadow: -1px 1px white; 
     }
-    `
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+`
     export const SocialsLinks = styled.div`
     font-size: 30px;
     margin-top: 30px;
@@ -125,8 +173,5 @@ export const FooterSocials = styled.div`
         }
     }
 
-`
 
-// git remote add origin https://github.com/raphaeluwadone/resume.git
-// git branch -M main
-// git push -u origin main
+`
