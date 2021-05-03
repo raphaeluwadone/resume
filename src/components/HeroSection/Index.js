@@ -19,7 +19,7 @@ function HeroSection() {
         }, [])
 
     return (
-        <HeroContainer>
+        <HeroContainer id="hero">
             <HeroBg>
                 <VideoBg autoPlay loop src={Video} muted type='video/mp4' />
             </HeroBg>

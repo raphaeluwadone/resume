@@ -10,13 +10,40 @@ function Sidebar({isOpen, toggle}) {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to='about' onClick={toggle}>
+                    <SidebarLink to='about' 
+                            activeClass="active"
+                            spy={true}
+                            smooth={true}
+                            offset={-90}
+                            duration={500}
+                            onClick={toggle}>
                         About
                     </SidebarLink>
-                    <SidebarLink to='project' onClick={toggle}>
+                    <SidebarLink to='tools' 
+                            activeClass="active"
+                            spy={true}
+                            smooth={true}
+                            offset={-90}
+                            duration={500}
+                            onClick={toggle}>
+                        Tools
+                    </SidebarLink>
+                    <SidebarLink to='project'                             
+                            activeClass="active"
+                            spy={true}
+                            smooth={true}
+                            offset={-90}
+                            duration={500}
+                            onClick={toggle}>
                         Projects
                     </SidebarLink>
-                    <SidebarLink to='contact' onClick={toggle}>
+                    <SidebarLink to='contact'                             
+                            activeClass="active"
+                            spy={true}
+                            smooth={true}
+                            offset={-90}
+                            duration={500}
+                            onClick={toggle}>
                         Contact
                     </SidebarLink>
                 </SidebarMenu>

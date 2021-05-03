@@ -7,7 +7,12 @@ function Navbar({toggle}) {
         <>
          <Nav>
             <NavbarContainer>
-                <NavLogo to="/">
+                <NavLogo to="hero"
+                    spy={true}
+                    smooth={true}
+                    offset={-90}
+                    duration={500}
+                >
                     Rafaelo
                 </NavLogo>
                 <MobileIcon onClick={toggle}>
@@ -15,17 +20,46 @@ function Navbar({toggle}) {
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to='about'>
+                        <NavLinks to='about'
+                            activeClass="active"
+                            spy={true}
+                            smooth={true}
+                            offset={-90}
+                            duration={500}
+                        >
                             About
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='projects'>
+                        <NavLinks to='tools'
+                            activeClass="active"
+                            spy={true}
+                            smooth={true}
+                            offset={-90}
+                            duration={500}
+                        >
+                            Tools
+                        </NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks to='projects'
+                            activeClass="active"
+                            spy={true}
+                            smooth={true}
+                            offset={-90}
+                            duration={500}
+                        >
                             Projects
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='contact'>
+                        <NavLinks to='contact'
+                            activeClass="active"
+                            spy={true}
+                            smooth={true}
+                            offset={-90}
+                            duration={500}
+                        >
                             Contact
                         </NavLinks>
                     </NavItem>

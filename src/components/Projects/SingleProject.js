@@ -11,6 +11,7 @@ function SingleProject(props) {
         onMouseOver={() => setShowContent(true)}
         onMouseOut={() => setShowContent(false)}
       >
+        
         <ProjectImg src={props.img} onMouseOver={() => setShowContent(true)} onMouseOut={() => setShowContent(false)}/>
           <ProjectContent style={{ opacity: `${showContent ? "1" : "0"}` }}>
             <ContentH1>{props.title}</ContentH1>
@@ -18,8 +19,8 @@ function SingleProject(props) {
               {props.desc}
             </ContentP>
             <LinksWrapper>
-              <ProjectLink>Go Live</ProjectLink>
-              <GitLink>Go Git</GitLink>
+              <ProjectLink href={props.links.live}>Go Live</ProjectLink>
+              <GitLink href={props.links.git}>Go Git</GitLink>
             </LinksWrapper>
           </ProjectContent>
       </ProjectCard>

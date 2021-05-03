@@ -1,16 +1,16 @@
 import React from 'react'
+import Dev from '../../video/dev-icon.png'
 import { AboutContainer, AboutContent, AboutH1, AboutImg, AboutImgWrap, AboutP, AboutWrapper } from './aboutElements'
 
 
 function About() {
     return (
         <>
-            <AboutContainer>
+            <AboutContainer id="about">
                 <AboutWrapper>
                     <AboutImgWrap>
                         {/* <i class="devicon-html5-plain" style={{fontSize: "100px", color: "red"}}></i> */}
-                        <AboutImg>
-                        </AboutImg>
+                        <AboutImg src={Dev} width="100%"/>
                     </AboutImgWrap>
                     <AboutContent>
                         <AboutH1>

@@ -4,7 +4,7 @@ import { ToolsContainer, ToolsH1, ToolsWrapper, ToolsP, ToolsImg, SingleTool } f
 
 function Tools() {
     return (
-        <ToolsWrapper>
+        <ToolsWrapper id="tools">
             <ToolsH1>My Tool Kit .</ToolsH1>
             <ToolsContainer>
             <ToolsP>These are the some of the tools & skills i have picked up along the way and frequently use. Though i am constantly looking to add more to my arsenal. (Currently learning TypeScript)</ToolsP>

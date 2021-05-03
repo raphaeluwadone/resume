@@ -112,7 +112,7 @@ export const LinksWrapper = styled.div`
 
 `
 
-export const ProjectLink = styled(LinkR)`
+export const ProjectLink = styled.a`
     text-decoration: none;
     padding: 3px 11px;
     margin-right: 25px;
@@ -136,7 +136,7 @@ export const ProjectLink = styled(LinkR)`
     }
 
 `
-export const GitLink = styled(LinkR)`
+export const GitLink = styled.a`
     text-decoration: none;
     padding: 3px 11px;
     margin-left: 15px;

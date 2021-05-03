@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const AboutContainer = styled.div`
     
-   
+
 `
 
 export const AboutWrapper = styled.div`
@@ -18,7 +18,7 @@ export const AboutWrapper = styled.div`
     padding: 80px;
     grid-gap: 80px;
     grid-template-columns: 500px auto;
-    background: yellow;
+    // background: yellow;
 
     @media screen and (max-width: 1300px) {
         grid-template-columns: 200px 500px;

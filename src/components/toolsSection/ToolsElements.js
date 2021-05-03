@@ -36,7 +36,7 @@ export const ToolsContainer = styled.div`
     height: 100%;
     flex-wrap: wrap;
     flex-dirextion: row;
-    background: cyan;
+    // background: cyan;
     width: 85%;
     margin-left: auto;
 
@@ -57,7 +57,7 @@ export const ToolsContainer = styled.div`
 
     @media screen and (max-width: 580px) {
         font-size: 16px;
-        background: pink;
+        // background: pink;
         align-items: flex-start;
         flex-direction: column;
         justify-content: flex-start;
@@ -69,7 +69,7 @@ export const ToolsP = styled.p`
     width: 450px;
     line-height: 24px;
     padding: 20px;
-    background: red;
+    // background: red;
 
     @media screen and (max-width: 768px) {
        margin: 0 auto;
@@ -142,6 +142,6 @@ export const ToolsImg = styled.div`
     @media screen and (max-width: 480px) {
         width: 100%;
         font-size: 16px;
-        background: red;
+        // background: red;
     }
 `

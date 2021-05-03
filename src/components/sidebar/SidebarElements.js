@@ -56,13 +56,19 @@ export const SidebarLink = styled(LinkS)`
     transition: 0.2s ease-in-out;
     text-decoration: none;
     padding: 15px 0;
-    color: red;
+    color: #01bf71;
     cursor: pointer;
 
-     &:hover {
-         color: #01bf71;
-         transition: 0.2 ease-in-out;
-     }
+    &:hover {
+        color: #01bf71;
+        transition: 0.2 ease-in-out;
+    }
+
+    &.active {
+        border-bottom: 4px solid #01bf71;
+        color: white;
+        font-weight: bolder;
+    }
 `
 
 export const SideBtnWrap = styled.div`
